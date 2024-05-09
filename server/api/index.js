@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended : false }));
 
 app.use(bodyParser.json({  limit: "30mb" , extended: true  }));
 app.use(bodyParser.urlencoded({ limit: "30mb" , extended: true}));
-app.use(cors({origin: true, credentials: true}));
+app.use(cors({origin: ["http://lib-linx-app.vercel.app"], credentials: true}));
 
 const jwt = require('jsonwebtoken');
 
